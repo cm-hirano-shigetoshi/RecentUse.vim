@@ -1,5 +1,5 @@
 base_task:
-    input: sed -n 's/^> //p' ~/.viminfo
+    input: sed -n 's/^> //p' ~/.viminfo | grep -v '/\.git/COMMIT_EDITMSG$'
     opts:
         - multi
         - no-sort
