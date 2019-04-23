@@ -5,7 +5,3 @@ base_task:
         - no-sort
         - height=9999
     preview: eval head -n 10000 {}
-expects:
-    enter:
-        stdout:
-            join:
