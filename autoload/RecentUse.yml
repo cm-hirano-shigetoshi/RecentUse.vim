@@ -5,3 +5,6 @@ base_task:
         - no-sort
         - height=9999
     preview: eval head -n 10000 {}
+    output:
+        enter:
+            - pipe: tr '\n' ' '
